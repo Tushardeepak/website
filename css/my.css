@@ -1,0 +1,97 @@
+.heroBtn {
+  text-decoration: none !important;
+}
+.getInTouch {
+  margin-top: 4rem !important;
+}
+.btn:hover .heroBtn {
+  color: black !important;
+}
+.btn {
+  transition: all 0.3s ease-in-out !important;
+}
+.aboutBox {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.aboutMeText {
+  font-size: 1rem !important;
+}
+.resumeBtn {
+  width: 30% !important;
+  z-index: 200;
+}
+.resumeDrivelink{
+  text-decoration: none;
+  color: black;
+}
+.resumeBtn:hover .resumeDrivelink{
+  color: #fff;
+}
+.projectBoxRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 200;
+  margin-top: 5%;
+}
+.projectBoxRight a {
+  text-align: center;
+}
+
+.projectBoxRight img {
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+  z-index: 200;
+  cursor: pointer;
+  border: 1rem solid transparent;
+}
+.projectBoxRight a:hover img {
+  transform: scale(1.3);
+}
+@media (max-width: 980px) {
+  .section-about:before {
+    opacity: -1 !important;
+  }
+  .projectContainer {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .application-content {
+    transform: scale(0.9);
+  }
+  .application-content p {
+    font-size: 1.5rem;
+  }
+  .projectBoxRight a {
+    width: 15rem;
+    height: 10rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-title {
+    transform: translateY(-50%) !important;
+  }
+  .descriptionHead {
+    transform: translateY(-100%);
+  }
+  .getInTouch {
+    transform: translateY(300%) !important;
+  }
+  .features {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .projectBoxRight {
+    margin-left: 0rem;
+    grid-template-columns: 1fr;
+  }
+  .projectBoxRight a {
+    width: auto;
+    height: auto;
+  }
+  .application-content {
+    transform: scale(1);
+  }
+}
